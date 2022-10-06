@@ -1,24 +1,27 @@
 
 
 public class Joueur{
-	private String nom = ""; 
-	private int points = 0;
+	private String nom; 
+	private int points;
+	private Carte[] deck; 
 	
-	public Joueur(String nom) {
+	public Joueur(String nom){
 		this.nom = nom;
-	}
+		this.points = 0;
+		this.deck;
+		}
 	
 	public int compteur() {
 		return this.points; 
 	}
 	
 	
-//	public int getPaquet() {
-//		Joueur a = new Joueur("a");
-//		if()
-//		return 1;
-//		//Verifie le nombre de carte dans la main du jouer
-//	}
+	public bool getPaquet() {
+		Joueur a = new Joueur("a");
+		if(this.deck.length >0)
+		return true;
+		//Verifie le nombre de carte dans la main du jouer
+	}
 	
 	public void jouer() {
 		//Le joueur joue 1 carte

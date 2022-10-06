@@ -12,7 +12,7 @@ public class Bataille {
 		
 		paquet.addAll(paquet);
 		
-		while(Joueur1.getPaquet() >= 1 && Joueur2.getPaquet() >= 1) {
+		while(Joueur1.getPaquet() && Joueur2.getPaquet()) {
 		
 		
 			
