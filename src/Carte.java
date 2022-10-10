@@ -6,6 +6,7 @@ public class Carte {
 	private String[] couleurs = {"Coeur","carreau","trèfle","pique"};
 	private int valeur;
 	private int couleur;
+	private ArrayList<Carte> deck; 
 	
 	public Carte(int valeur, int couleur) {
 		this.valeur = valeur;
@@ -45,4 +46,14 @@ public class Carte {
 		
 		return result;
 	}
+	
+	public void melanger() {
+		this.deck = new ArrayList<>();
+        for (int i = 2; i <= 14; i++) {
+            for (int j = 1; j <= 4; j++) {
+                deck.add(new Carte(i, j));
+            }
+        }
+	}
+
 }

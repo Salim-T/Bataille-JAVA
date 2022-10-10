@@ -14,9 +14,7 @@ public class Joueur{
 	public int compteur() {
 		return this.points; 
 	}
-	
-	
-        
+	     
 	public boolean getPaquet() {
 		Joueur a = new Joueur("a");
 		boolean b = false;
