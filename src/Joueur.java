@@ -1,14 +1,13 @@
-
+import java.util.ArrayList;
 
 public class Joueur{
 	private String nom; 
 	private int points;
-	private Carte[] deck; 
 	
 	public Joueur(String nom){
 		this.nom = nom;
 		this.points = 0;
-		this.deck;
+		this.deck = new ArrayList<Carte>;
 		}
 	
 	public int compteur() {
@@ -16,6 +15,7 @@ public class Joueur{
 	}
 	
 	
+        
 	public bool getPaquet() {
 		Joueur a = new Joueur("a");
 		if(this.deck.length >0)

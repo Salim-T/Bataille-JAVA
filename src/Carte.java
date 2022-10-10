@@ -1,23 +1,27 @@
+import java.util.ArrayList;
 import java.util.Random;
 
 public class Carte {
 	private int[] valeurs = new int[14];
 	private String[] couleurs = {"Coeur","carreau","trèfle","pique"};
 	private int valeur;
-	private String couleur;
+	private int couleur;
+	private ArrayList<Carte> deck; 
 	
-	public Carte() {
-		Random rd = new Random();
-		Random rd2 = new Random();
-		this.valeur = valeurs[rd.nextInt(valeurs.length)];
-		this.couleur = couleurs[rd2.nextInt(couleurs.length)];	
+	public Carte(int valeur, int couleur) {
+		this.valeur = valeur;
+		this.couleur = couleur;
+//		Random rd = new Random();
+//		Random rd2 = new Random();
+//		this.valeur = valeurs[rd.nextInt(valeurs.length)];
+//		this.couleur = couleurs[rd2.nextInt(couleurs.length)];	
 	}
 	
 	public int getValeur() {	
 		return valeur;
 	}
 	
-	public String getCouleur() {
+	public int getCouleur() {
 		return couleur;
 	}
 	
@@ -28,7 +32,7 @@ public class Carte {
 	//Comparer une carte
 	
 	public String compare(Carte c) {
-		Carte c2 = new Carte();
+		Carte c2 = new Carte(valeur,couleur);
 		String result;
 		if(this.valeur > c2.valeur) {
 			result = "la carte" + this+ " est plus haute";
