@@ -6,7 +6,6 @@ public class Carte {
 	private String[] couleurs = {"Coeur","carreau","trèfle","pique"};
 	private int valeur;
 	private int couleur;
-	private ArrayList<Carte> deck; 
 	
 	public Carte(int valeur, int couleur) {
 		this.valeur = valeur;
